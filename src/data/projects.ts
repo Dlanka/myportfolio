@@ -13,7 +13,7 @@ export interface Project {
   image: string
 }
 
-export const projects: Project[] = [
+export const webProjects: Project[] = [
   {
     id: 'financeos',
     name: 'FinanceOS',
@@ -54,3 +54,35 @@ export const projects: Project[] = [
     image: '/bakecost.png',
   },
 ]
+
+export const emailProjects: Project[] = [
+  {
+    id: 'orbitflow-email',
+    name: 'OrbitFlow — Product Launch Email',
+    description:
+      'A full-featured SaaS product-launch marketing email engineered with MJML. Features responsive layout, dark mode aesthetic, and cross-client inbox compatibility.',
+    longDescription:
+      'A full-featured SaaS product-launch email built with MJML. Features responsive single-column layout, feature highlights, and accessible CTA buttons.',
+    tags: ['MJML', 'HTML Email', 'Responsive', 'Marketing Email'],
+    liveUrl: 'https://dlanka-emails.pages.dev/preview/orbitflow',
+    repoUrl: '',
+    accent: '#818cf8',
+    image: '/orbitflow.png',
+  },
+  {
+    id: 'northstar-signature',
+    name: 'Northstar Studio — Email Signature',
+    description:
+      'A compact, professional HTML email signature engineered with table-based layouts and inline CSS. Fully compatible with Gmail, Outlook, and mobile clients.',
+    longDescription:
+      'A compact, professional HTML email signature using table-based layout and inline CSS. Tested and compatible with Gmail and desktop/web email clients.',
+    tags: ['HTML Signature', 'Inline CSS', 'Tables', 'Email-Safe'],
+    liveUrl: 'https://dlanka-emails.pages.dev/preview/northstar',
+    repoUrl: '',
+    accent: '#22d3ee',
+    image: '/northstar.png',
+  },
+]
+
+/** Backward-compatible export for existing web application projects */
+export const projects: Project[] = webProjects
